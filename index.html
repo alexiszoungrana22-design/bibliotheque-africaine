@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez la littérature, l'histoire, l'éducation et le patrimoine culturel africains.">
+  <title>Bibliothèque Africaine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">
+      <span class="logo-icon">📚</span>
+      <span>Bibliothèque <strong>Africaine</strong></span>
+    </a>
+    <p class="slogan">Notre mémoire. Notre savoir. Notre avenir.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">LE SAVOIR AFRICAIN À PORTÉE DE MAIN</p>
+      <h1>Explorez les richesses de l'Afrique</h1>
+      <p>Livres, histoire, éducation et patrimoine culturel réunis dans un même espace.</p>
+
+      <form id="search-form" class="search-form">
+        <input id="search-input" type="search"
+          placeholder="Titre, auteur, thème..."
+          aria-label="Rechercher une ressource">
+        <button type="submit">Rechercher</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <h2>Explorer les collections</h2>
+      <div class="categories">
+        <button class="category active" data-category="Tous">Tout</button>
+        <button class="category" data-category="Littérature">Littérature</button>
+        <button class="category" data-category="Éducation">Éducation</button>
+        <button class="category" data-category="Histoire">Histoire</button>
+        <button class="category" data-category="Culture">Culture</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>À découvrir</h2>
+        <span id="result-count">0 ressource</span>
+      </div>
+      <div id="book-list" class="book-grid"></div>
+      <p id="empty-message" hidden>
+        Aucune ressource trouvée. Essaie une autre recherche.
+      </p>
+    </section>
+
+    <section class="about">
+      <h2>Un patrimoine à transmettre</h2>
+      <p>
+        Bibliothèque Africaine a pour mission de faciliter l'accès
+        au savoir, de valoriser les auteurs africains et de préserver
+        les histoires et les cultures du continent.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Bibliothèque Africaine · Notre mémoire, notre avenir.</p>
+    <p>Les ressources seront publiées selon leurs droits de diffusion.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
